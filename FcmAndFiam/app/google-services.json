@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996460320746",
+    "firebase_url": "https://fcm-and-fiam.firebaseio.com",
+    "project_id": "fcm-and-fiam",
+    "storage_bucket": "fcm-and-fiam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996460320746:android:06086c4ad24eba8ffec493",
+        "android_client_info": {
+          "package_name": "com.google.firebase.codelab.fcmandfiam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996460320746-of3p9vtfihnbef54rr50glgprqljlob9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO6c1aM0TyruJxC6nYyJI8qlijTZCVgbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996460320746-of3p9vtfihnbef54rr50glgprqljlob9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
