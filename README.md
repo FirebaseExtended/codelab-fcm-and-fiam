@@ -3,7 +3,7 @@
 This is the source code for the "Use FCM and FIAM to send messages to users" codelab.
 To get started open the codelab instructions:
 
- - [Codelab](https://developers.google.com/codelabs/fcm-and-fiam/)
+ - [Codelab](https://developers.google.com/fcm-and-fiam/)
 
 
 ## How to make contributions?
