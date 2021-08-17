@@ -3,12 +3,11 @@ id: fcm-and-fiam
 summary: Learn to send messages to your users with Firebase Cloud Messaging and Firebase In-App Messaging.
 status: [draft]
 authors: Arthur Thompson
-categories: android
+categories: Android
 tags: web
 feedback link: https://github.com/FirebaseExtended/codelab-fcm-and-fiam/issues
 analytics account: UA-52746336-1
-source: 1Jv37a9mTrbFuT35HXrXgPP_fuGI6OWBrD9u0bZfOeL4
-duration: 13
+
 ---
 
 # Use FCM and FIAM to send messages to users
@@ -20,13 +19,17 @@ duration: 13
 
 
 
-In this codelab, you learn how to add the ability to engage with users when they are using or not using your Android app.
+In this codelab, you learn how to add the ability to engage with users
+whether they are using your app in the foreground or your app is in the
+background.
 
-<img src="img/206c7ecece550bde.png" alt="206c7ecece550bde.png"  width="154.16" />
+<img src="img/206c7ecece550bde.png" alt="206c7ecece550bde.png"  width="154.16" style="border: 1px solid #000;"/>
 
 ### **Prerequisites**
 
-### **What you'll learn** 
+None
+
+### **What you'll learn**
 
 * Add Firebase to your Android App
 * Add FCM and FIAM dependencies
@@ -48,7 +51,7 @@ Duration: 04:00
 Clone the GitHub repository from the command line:
 
 > aside positive
-> 
+>
 > $ git clone https://github.com/FirebaseExtended/codelab-fcm-and-fiam
 
 ### **Import the starter app**
@@ -67,8 +70,8 @@ Duration: 04:00
 1. Go to the  [Firebase console](https://console.firebase.google.com).
 2. Select **Add project**.
 3. Select or enter a Project name.
-4. Follow the remaining setup steps in the Firebase console, then click **Create project** 
-(or Add Firebase, if you're using an existing Google project).
+4. Follow the remaining setup steps in the Firebase console, then click **Create project**
+   (or Add Firebase, if you're using an existing Google project).
 5. From the overview screen of your new project, click the Android icon to launch the setup workflow.
 6. Enter the codelab's package name: `com.google.firebase.codelab.fcmandfiam`
 
@@ -128,7 +131,7 @@ Duration: 01:00
 
 Firebase Cloud Messaging and Firebase In App Messaging both use identifiers to send messages to apps. FCM uses a registration token and FIAM uses an installation ID.
 
-1. In MainActivity.kt replace the TODO with the code below to log the identifiers needed to send messages:
+1. In `MainActivity.kt` replace the TODO with the code below to log the identifiers needed to send messages:
 
 ```
 FirebaseMessaging.getInstance().token.addOnCompleteListener { regTokenTask ->
@@ -149,8 +152,8 @@ FirebaseInstallations.getInstance().id.addOnCompleteListener { installationIdTas
 }
 ```
 
-2. Connect your Android device, and click **Run** ( <img src="img/c8b8a080b7ead886.png" alt="execute.png"  width="20.00" />)in the Android Studio toolbar. 
-Tapping on the Log Identifiers button will log the FCM registration token and the Firebase Installations ID to logcat. The output should look like this:
+2. Connect your Android device, and click **Run** ( <img src="img/c8b8a080b7ead886.png" alt="execute.png"  width="20.00" />)in the Android Studio toolbar.
+   Tapping on the **Log Identifiers** button will log the FCM registration token and the Firebase Installations ID to logcat. The output should look like this:
 
 ```
 D/FcmAndFiam: Firebase Installations ID: emMc5...AsJfb
@@ -168,9 +171,13 @@ FCM messages can be sent both from the Firebase console and from the FCM REST AP
 2. Go to the Firebase console and select **Cloud Messaging** in the left navigation
 3. Select **Send your first message**
 4. Add a title and body for the message, then click **Send test message**
+
 <img src="img/207ced65f5245ada.png" alt="207ced65f5245ada.png"  width="460.10" />
+
 5. Add the FCM registration token, then click **test**
+
 <img src="img/f3556c6a8a6453fe.png" alt="f3556c6a8a6453fe.png"  width="454.50" />
+
 6. Observe display notification on device
 7. Tapping on the notification opens the app
 
@@ -185,10 +192,14 @@ Firebase In App Messaging can be triggered as a result of a variety of user even
 2. Go to the Firebase console and select In-App Messaging in the left navigation
 3. Select **Create your first campaign**
 4. Select top banner campaign and enter title and body of the message
-<img src="img/69f6ea5efff240d1.png" alt="69f6ea5efff240d1.png"  width="448.36" />
 5. Click **Test on device**
-6. Add Installations ID and click **Test**               
+
+<img src="img/69f6ea5efff240d1.png" alt="69f6ea5efff240d1.png"  width="448.36" />
+
+6. Add Installations ID and click **Test**
+
 <img src="img/24b101edfab47144.png" alt="24b101edfab47144.png"  width="450.50" />
+
 7. Reopen app
 8. Observe in app message
 
@@ -197,7 +208,9 @@ Firebase In App Messaging can be triggered as a result of a variety of user even
 
 
 
-Congratulations, you've successfully sent both FCM and FIAM messages. Now you know how to engage with your users when they are both outside and inside your apps.
+Congratulations, you've successfully sent both FCM and FIAM messages. Now you
+know how to engage with your users whether they are using your app in the
+foreground or your app is in the background.
 
 ### **Further reading**
 
@@ -212,5 +225,4 @@ Congratulations, you've successfully sent both FCM and FIAM messages. Now you kn
 
 *  [Firebase Cloud Messaging](https://firebase.google.com/docs/reference/kotlin/com/google/firebase/messaging/ktx/package-summary)
 *  [Firebase In-App Messaging](https://firebase.google.com/docs/reference/kotlin/com/google/firebase/inappmessaging/display/package-summary)
-
 
