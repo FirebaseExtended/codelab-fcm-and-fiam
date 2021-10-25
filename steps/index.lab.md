@@ -90,7 +90,7 @@ buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.google.gms:google-services:4.3.4'
+    classpath 'com.google.gms:google-services:4.3.8'
   }
 }
 ```
@@ -113,7 +113,7 @@ app/build.gradle
 ```
 dependencies {
   ...
-  implementation platform('com.google.firebase:firebase-bom:25.12.0')
+  implementation platform('com.google.firebase:firebase-bom:28.4.2')
   implementation 'com.google.firebase:firebase-analytics'
   implementation 'com.google.firebase:firebase-messaging'
   implementation 'com.google.firebase:firebase-inappmessaging-display'
